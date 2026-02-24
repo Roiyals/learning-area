@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Adding an internal css instead of to avoid other documents from being altered with the styles specific for this challenge or lesson (they're all linked to the samed external CSS) */
+      tbody {
+        font-size: 95%;
+        font-style: italic;
+      }
+
+      tfoot {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My spending record</h1>
+
+    <table>
+      <caption>
+        How I chose to spend my money
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Purchase</th>
+          <th scope="col">Location</th>
+          <th scope="col">Date</th>
+          <th scope="col">Evaluation</th>
+          <th scope="col">Cost (€)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td col="row">Haircut</td>
+          <td>Hairdresser</td>
+          <td>12/09</td>
+          <td>Great idea</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td col="row">Lasagna</td>
+          <td>Restaurant</td>
+          <td>12/09</td>
+          <td>Regrets</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td col="row">Shoes</td>
+          <td>Shoe shop</td>
+          <td>13/09</td>
+          <td>Big regrets</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td col="row">Toothpaste</td>
+          <td>Supermarket</td>
+          <td>13/09</td>
+          <td>Good</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">SUM</td>
+          <td>118</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
